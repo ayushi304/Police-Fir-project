@@ -3,13 +3,16 @@ package com.ayu;
 import java.sql.Blob;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class ComplaintForm {
 
 	@Id
-	private String ComplaintId;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int ComplaintId;
 	private String StationName;
 	private String Complaintype;
 	private String DateOfIncident;
@@ -25,12 +28,12 @@ public class ComplaintForm {
 	private Blob image;
 	private String State;
 	private String pincode;
-    
-	public String getComplaintId() {
+
+	public int getComplaintId() {
 		return ComplaintId;
 	}
 
-	public void setComplaintId(String complaintId) {
+	public void setComplaintId(int complaintId) {
 		ComplaintId = complaintId;
 	}
 
@@ -129,8 +132,8 @@ public class ComplaintForm {
 	public void setCity(String city) {
 		City = city;
 	}
-	
-		public Blob getImage() {
+
+	public Blob getImage() {
 		return image;
 	}
 
@@ -138,7 +141,7 @@ public class ComplaintForm {
 		this.image = image;
 	}
 
-		public String getState() {
+	public String getState() {
 		return State;
 	}
 
@@ -153,14 +156,14 @@ public class ComplaintForm {
 	public void setPincode(String pincode) {
 		this.pincode = pincode;
 	}
-	
-	public ComplaintForm(String complaintId, String stationName,
-			String complaintype, String dateOfIncident, String timeOfIncident,
-			String district, String writeComplain, String placeOfOccurence,
-			String name, String mob, String email, String hno, String city,
-			Blob image, String state, String pincode) {
+
+	public ComplaintForm(String stationName, String complaintype,
+			String dateOfIncident, String timeOfIncident, String district,
+			String writeComplain, String placeOfOccurence, String name,
+			String mob, String email, String hno, String city, Blob image,
+			String state, String pincode) {
 		super();
-		ComplaintId = complaintId;
+
 		StationName = stationName;
 		Complaintype = complaintype;
 		DateOfIncident = dateOfIncident;
@@ -177,6 +180,7 @@ public class ComplaintForm {
 		State = state;
 		this.pincode = pincode;
 	}
+
 
 	public ComplaintForm() {
 		super();
@@ -195,5 +199,4 @@ public class ComplaintForm {
 				+ pincode + "]";
 	}
 
-	
 }

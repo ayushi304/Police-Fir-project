@@ -47,11 +47,11 @@ ul li a:hover {
 ul li:hover ul li {
 	display: block;
 }
+
 .active, ul li:hover
 {
   background:#2bab0d;
 }
-
 
 </style>
 
@@ -59,23 +59,31 @@ ul li:hover ul li {
 <header class=header>
    	<img src="image/police1.jpg" align="left" style="width:10%;height:95px;">
 	<h1 align="center">FIR-Summary</h1>
+	
+	<div class="row" align="right">
+			<button style = "height:30px; width:70px"><a href="Logout">Logout</a></button>
+				</div>
 </header>
 <div align="center">   
 <nav>
        <ul>
-       <li> <a href="Home.jsp">Home</a></li>
-       <li> <a href="AboutUs.jsp">About us</a></li>  
-      <li class="active"><a href="FIRSummary.jsp">FIR Summary</a></li>
+       <li> <a href="HomeLogout.jsp">Home</a></li>
+       <li> <a href="AboutUsLogout.jsp">About us</a></li>  
+       <li> <a href="addComplaintLogout.jsp">Compliant Form</a>
+             <ul>
+                <li class="active"> <a href="FIRSummaryLogout.jsp">FIR Summary</a></li>
+             </ul>
+       </li>      
        <li> <a href="">Citizen Charter</a>
             <ul>
-                 <li> <a href="WomenRight.jsp">Women's Right</a></li>
-                 <li> <a href="ChildRight.jsp">Children's Right</a></li>
-                 <li> <a href="CyberCrime.jsp">Cyber Crime</a></li>
+                 <li> <a href="WomenRightLogout.jsp">Women's Right</a></li>
+                 <li> <a href="ChildRightLogout.jsp">Children's Right</a></li>
+                 <li> <a href="CyberCrimeLogout.jsp">Cyber Crime</a></li>
             </ul>
         </li>    
-       <li > <a href="Emergency.jsp">Emergency</a></li>
-       <li> <a href="ContactUs.jsp">Feedback Service</a></li>
-       <li> <a href="Help.jsp">Help</a></li>
+       <li > <a href="EmergencyLogout.jsp">Emergency</a></li>
+       <li> <a href="ContactUsLogout.jsp">Feedback Service</a></li>
+       <li> <a href="HelpLogout.jsp">Help</a></li>
        
       </ul>
     </nav>

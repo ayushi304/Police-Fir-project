@@ -22,7 +22,7 @@ public class SavePolice extends HttpServlet {
 				String dob=request.getParameter("dob");
 				String gender=request.getParameter("gender");
 				//process data
-				Police p=new Police(email,password,pname,address,dob,mobile,gender);
+				Police p=new Police(email,pname,password,address,dob,mobile,gender);
 				PoliceDAO pd=new PoliceDAO();
 				pd.addPolice(p);
 				//response
@@ -38,7 +38,7 @@ public class SavePolice extends HttpServlet {
 		      	out.println("</body>");
 		      	out.println("</html>");
 		      	out.println("<a href=Home.jsp>Home</a>");
-			    out.println("<a href=Registration.jsp>Register More</a>");
+			    out.println("<a href=PoliceRegistration.jsp>Register More</a>");
 			
 	}
 }

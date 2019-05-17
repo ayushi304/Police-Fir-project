@@ -21,7 +21,7 @@ public class SaveUser extends HttpServlet {
 		String dob=request.getParameter("dob");
 		String gender=request.getParameter("gender");
 		//process data
-		User u=new User(email,password,name,address,dob,mobile,gender);
+		User u=new User(email,name,password,address,dob,mobile,gender);
 		UserDAO ud=new UserDAO();
 		ud.addUser(u);
         //response
@@ -36,7 +36,7 @@ public class SaveUser extends HttpServlet {
       	out.println("<h2>Account Created Successfully..</h2>");
       	out.println("</body>");
       	out.println("</html>");
-      	out.println("<a href=home.jsp>Home</a>");
+      	out.println("<a href=Home.jsp>Home</a><br>");
 	    out.println("<a href=Registration.jsp>Register More</a>");
 	}
 }

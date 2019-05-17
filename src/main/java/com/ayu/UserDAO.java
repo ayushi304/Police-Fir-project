@@ -32,18 +32,6 @@ public class UserDAO {
 		return ulist;
 	}
 	
-  /*  //search user by name
-	public List<User> searchByUsername(String username)
-	{
-		Session session=sf.openSession();
-	    Criteria cr=session.createCriteria(User.class);
-        Criterion crt=Restrictions.eq("email", username);
-        cr.add(crt);
-        List<User> ulist=cr.list();
-		session.close();
-		return ulist;
-	}
-*/
 	//search by id
 	public User searchById(String username)
 	{

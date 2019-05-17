@@ -100,6 +100,12 @@
   	<description></description>
   	<servlet-class>com.ayu.UpdateAllComplaint</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>ImageLoader</servlet-name>
+  	<display-name>ImageLoader</display-name>
+  	<description></description>
+  	<servlet-class>com.ayu.ImageLoader</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Logout</servlet-name>
   	<url-pattern>/Logout</url-pattern>
@@ -163,6 +169,10 @@
   <servlet-mapping>
   	<servlet-name>UpdateAllComplaint</servlet-name>
   	<url-pattern>/UpdateAllComplaint</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ImageLoader</servlet-name>
+  	<url-pattern>/ImageLoader</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
   <welcome-file>Home.jsp</welcome-file>

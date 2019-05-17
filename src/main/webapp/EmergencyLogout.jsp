@@ -58,22 +58,6 @@ table
  width:50%;
  text-align:center;
 }
-
-.blog-bar {
-	position: fixed;
-	padding: 4px 0;
-	top: 0;
-	background: #D2691E;
-	border-bottom: 1px solid #cdcdcd;
-	width: 100%;
-}
-
-.blog-bar .notify-text {
-	text-align: center;
-	font-size: 20px;
-	color: #fff;
-	font-weight: 600;
-}
 </style>
 </head>
 <body>
@@ -82,39 +66,30 @@ table
 		 <img src="image/police1.jpg" align="left" style="width:10%;height:95px;">
 			<h1 align="center">Welcome to the Just Cops</h1>
 		</div>
-
-		<div class="blog-bar">
-			<div class="row">
-				<div class="notify-text">
-					<span>Want to Complaint</span> <a href="Registration.jsp"
-						class="blog-register">Register Now</a>
+	<div class="row" align="right">
+			<button style = "height:30px; width:70px"><a href="Logout">Logout</a></button>
 				</div>
-			</div>
-		</div>
-		
-		<div class="row" align="right">
-		
-				<button style = "height:30px; width:70px"><a href="Login.jsp">Login</a></button>
-			<button style = "height:30px; width:70px"><a href="Registration.jsp">Sign-Up</a></button>
-	
-		</div>
-	</header>
+				</header>
 <div align="center">   
 <nav>
        <ul>
-       <li> <a href="Home.jsp">Home</a></li>
-       <li> <a href="AboutUs.jsp">About us</a></li>  
-       <li><a href="FIRSummary.jsp">FIR Summary</a></li>     
+       <li> <a href="HomeLogout.jsp">Home</a></li>
+       <li> <a href="AboutUsLogout.jsp">About us</a></li>  
+       <li> <a href="addComplaintLogout.jsp">Compliant Form</a>
+             <ul>
+                <li> <a href="FIRSummaryLogout.jsp">FIR Summary</a></li>
+             </ul>
+       </li>      
        <li> <a href="">Citizen Charter</a>
             <ul>
-                 <li> <a href="WomenRight.jsp">Women's Right</a></li>
-                 <li> <a href="ChildRight.jsp">Children's Right</a></li>
-                 <li> <a href="CyberCrime.jsp">Cyber Crime</a></li>
+                 <li> <a href="WomenRightLogout.jsp">Women's Right</a></li>
+                 <li> <a href="ChildRightLogout.jsp">Children's Right</a></li>
+                 <li> <a href="CyberCrimeLogout.jsp">Cyber Crime</a></li>
             </ul>
         </li>    
-       <li class="active"> <a href="Emergency.jsp">Emergency</a></li>
-       <li> <a href="ContactUs.jsp">Feedback Service</a></li>
-       <li> <a href="Help.jsp">Help</a></li>
+       <li class="active"> <a href="EmergencyLogout.jsp">Emergency</a></li>
+       <li> <a href="ContactUsLogout.jsp">Feedback Service</a></li>
+       <li> <a href="HelpLogout.jsp">Help</a></li>
        
       </ul>
     </nav>
@@ -155,9 +130,5 @@ table
           </tr>
      </table>
 
-<p>
-
-
-</p>
 </body>
 </html>

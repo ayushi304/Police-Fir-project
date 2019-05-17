@@ -55,7 +55,7 @@ public class ComplaintDAO{
 				return clist;
 		  } 
 	  //remove a Complain
-	  public void removeById(String ComplaintId ){
+	  public void removeById(int ComplaintId ){
 			  Session session=sf.openSession();
 			  Transaction tr=session.beginTransaction();
 			  ComplaintForm cf=new ComplaintForm(); cf.setComplaintId(ComplaintId);

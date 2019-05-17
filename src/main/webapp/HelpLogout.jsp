@@ -41,7 +41,6 @@ ul li ul li {
 position:relative;
 	display: none;
 }
-
 ul li a:hover {
 	background-color: green;
 }
@@ -53,68 +52,39 @@ ul li:hover ul li {
 .active, ul li:hover
 {
   background:#2bab0d;
-}
-.blog-bar {
-	position: fixed;
-	padding: 4px 0;
-	top: 0;
-	background: #D2691E;
-	border-bottom: 1px solid #cdcdcd;
-	width: 100%;
-}
-
-.blog-bar .notify-text {
-	text-align: center;
-	font-size: 20px;
-	color: #fff;
-	font-weight: 600;
-}
-</style>
+}</style>
 </head>
 <body>
 	<header class="header">
-		<!-- 
-<div class="logo">
-    <a href=""></a>
-</div>
- -->
 		<div class="header-middle">
 			<img src="image/police1.jpg" align="left" style="width:10%;height:95px;">
 			<h1 align="center">Welcome to the Just Cops</h1>
 		</div>
-
-		<div class="blog-bar">
-			<div class="row">
-				<div class="notify-text">
-					<span>Want to Complaint</span> <a href="Registration.jsp"
-						class="blog-register">Register Now</a>
-				</div>
-			</div>
-		</div>
-		
 		<div class="row" align="right">
-		
-				<button style = "height:30px; width:70px"><a href="Login.jsp">Login</a></button>
-			<button style = "height:30px; width:70px"><a href="Registration.jsp">Sign-Up</a></button>
-	
-		</div>
-	</header>
+			<button style = "height:30px; width:70px"><a href="Logout">Logout</a></button>
+				</div></header>
 <div align="center">   
 <nav>
        <ul>
-       <li> <a href="Home.jsp">Home</a></li>
-       <li> <a href="AboutUs.jsp">About us</a></li>  
-     <li><a href="FIRSummary.jsp">FIR Summary</a></li>
+       <li> <a href="HomeLogout.jsp">Home</a></li>
+       <li> <a href="AboutUsLogout.jsp">About us</a></li>  
+     
+      
+       <li> <a href="addComplaintLogout.jsp">Compliant Form</a>
+             <ul>
+                <li> <a href="FIRSummaryLogout.jsp">FIR Summary</a></li>
+             </ul>
+       </li>      
        <li> <a href="">Citizen Charter</a>
             <ul>
-                 <li> <a href="WomenRight.jsp">Women's Right</a></li>
-                 <li> <a href="ChildRight.jsp">Children's Right</a></li>
-                 <li> <a href="CyberCrime.jsp">Cyber Crime</a></li>
+                 <li> <a href="WomenRightLogout.jsp">Women's Right</a></li>
+                 <li> <a href="ChildRightLogout.jsp">Children's Right</a></li>
+                 <li> <a href="CyberCrimeLogout.jsp">Cyber Crime</a></li>
             </ul>
         </li>    
-       <li> <a href="Emergency.jsp">Emergency</a></li>
-       <li> <a href="ContactUs.jsp">Feedback Service</a></li>
-       <li class="active"> <a href="Help.jsp">Help</a></li>
+       <li> <a href="EmergencyLogout.jsp">Emergency</a></li>
+       <li> <a href="ContactUsLogout.jsp">Feedback Service</a></li>
+       <li class="active"> <a href="HelpLogout.jsp">Help</a></li>
        
       </ul>
     </nav>
@@ -124,7 +94,7 @@ ul li:hover ul li {
     <h2 align="center">--HELP--</h2>
     <p>
     <img src="image/help.jpg" align="right" style="width:40%;height:300px;">
-     <h3>How to Register?</h3>
+    <h3>How to Register?</h3>
 <br><p>You can register to our site to just follow this simple step:</p>
 <p>If you are a User : go to the register menu or sign up then their submenu
 		User Registration and fill your information and click to the SingUp
@@ -144,5 +114,5 @@ ul li:hover ul li {
 <br>
 <h3>Mobile:</h3>
 <p>121541245</p>
- </body>
+</body>
 </html>

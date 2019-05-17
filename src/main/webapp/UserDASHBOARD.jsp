@@ -47,6 +47,7 @@ ul li a {
 }
 
 ul li ul li {
+    position:relative;
 	display: none;
 }
 
@@ -57,131 +58,91 @@ ul li a:hover {
 ul li:hover ul li {
 	display: block;
 }
-
-.f-bottom {
-	background: #e45151;
-	height: 80px;
+.para
+{
+ background-color:lightgrey;
+ font-size:18px;
+ border:10px solid green;
+ padding:15px;
+ margin:20px;
 }
-
-.footer {
-	background-color: #ffb800;
-	position: absolute;
-	height: 100px;
-	width: 100%;
-	line-height: 34px;
-	bottom: 0px;
-}
-
-.blog-bar {
-	position: fixed;
-	padding: 4px 0;
-	top: 0;
-	background: #D2691E;
-	border-bottom: 1px solid #cdcdcd;
-	width: 100%;
-}
-
-.blog-bar .notify-text {
-	text-align: center;
-	font-size: 20px;
-	color: #fff;
-	font-weight: 600;
+  .active, ul li:hover
+{
+  background:#2bab0d;
 }
 </style>
 </head>
 <body>
 	<header class="header">
-		<!-- 
-<div class="logo">
-    <a href=""></a>
-</div>
- -->
 		<div class="header-middle">
+			<img src="image/police1.jpg" align="left" style="width:10%;height:95px;">
 			<h1 align="center">Welcome to the Just Cops</h1>
 		</div>
 		<h1 align="center">User-Dashboard</h1>
-
-		<div class="blog-bar">
-			<div class="row">
-				<div class="notify-text">
-					<span>Want to Complaint</span> <a href="" class="blog-register">Register
-						Now</a>
-				</div>
-			</div>
-		</div>
-		<div class="search">
-			<div class="">
-				<form method="get" class="search-form" action="">
-					<label class="screen-text" for="search-input">Search for:</label> <input
-						type="search" name="search" class="search-field"
-						placeholder="search here.."> <input type="hidden"
-						name="orderby" value="relevance"> <input type="hidden"
-						name="post_type" value="post,page,guide">
-					<button type="submit" class="button-invisible">
-						<span class="screen-text">Search</span>
-						<svg class="icon-search" width="26px" height="26px">
-  <use xlink:href="#icon-search"></use>
-    </svg>
-					</button>
-				</form>
-			</div>
-		</div>
 		<div class="row" align="right">
 			<button style="height: 30px; width: 70px">
 				<a href="Logout">Logout</a>
 			</button>
 		</div>
 	</header>
-	<center>
-		<div>
+		<div align="center">
 			<nav>
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">About us</a></li>
-					<li><a href="">Services</a>
+					<li class="active"><a href="HomeLogout.jsp">Home</a></li>
+					<li><a href="AboutUsLogout.jsp">About us</a></li>
+					<li><a href="addComplaintLogout.jsp">Complaint Form</a>
 						<ul>
-							<li><a href="">Feedback Services</a></li>
-							<li><a href="">Missing People</a></li>
-							<li><a href="">Most Wanted People</a></li>
-						</ul></li>
-					<li><a href="">Compliant Form</a>
-						<ul>
-							<li><a href="">FIR Summary</a></li>
+							<li><a href="FIRSummaryLogout.jsp">FIR Summary</a></li>
 						</ul></li>
 					<li><a href="">Citizen Charter</a>
 						<ul>
-							<li><a href="">Women's Right</a></li>
-							<li><a href="">Children's Right</a></li>
-							<li><a href="">Cyber Crime</a></li>
+							<li><a href="WomenRightLogout.jsp">Women's Right</a></li>
+							<li><a href="ChildRightLogout.jsp">Children's Right</a></li>
+							<li><a href="CyberCrimeLogout">Cyber Crime</a></li>
 						</ul></li>
-					<li><a href="">Emergency</a></li>
-					<li><a href="">Contact us</a></li>
-					<li><a href="">Help</a></li>
-
+					<li><a href="EmergencyLogout.jsp">Emergency</a></li>
+					<li><a href="ContactUsLogout.jsp">Feedback Service</a></li>
+					<li><a href="HelpLogout.jsp">Help</a></li>
 				</ul>
 			</nav>
 		</div>
-	</center>
-	<footer class="footer">
-		<div class="f-bottom">
-			<div class="wrapper">
-				<div class="f-align">
-					<span class="copyright">©2019 CSS</span>
-					<ul class="f-social">
-						<li><a href="https://twitter.com/csswinner" class="twitter"
-							target="_blank"></a></li>
-						<li><a href="https://www.facebook.com/csswinners"
-							class="facebook" target="_blank"></a></li>
-						<li><a href="https://www.pinterest.com/csswinner"
-							class="pinterest" target="_blank"></a></li>
-						<li><a href="https://plus.google.com/+Csswinner"
-							class="gplus" target="_blank"></a></li>
-						<li><a href="https://feeds.feedburner.com/csswinner"
-							class="feed" target="_blank"></a></li>
-					</ul>
-				</div>
-			</div>
+	<img src="image/185489.jpg" align="right" style="width:400px;height:550px;">
+		<br>
+		<br>
+	 <p class=para>
+	 Police Complaint Form 
+    If you have witnessed an incident that files under police attribution, 
+please use this online police FIR(Just-Cops) form to signalize it.
+ The police will review the report and take the appropriate action. 
+ <br>
+Thank you for being a responsible citizen
+	 </p>
+<!-- Map -->
+	<div class="mapouter">
+		<div class="gmap_canvas">
+			<iframe width="700" height="400" id="gmap_canvas"
+				src="https://maps.google.com/maps?q=indore%20police%20station&t=&z=13&ie=UTF8&iwloc=&output=embed"
+				frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			<a href="https://www.pureblack.de"></a>
 		</div>
-	</footer>
-</body>
+		</div>
+		<style>
+.mapouter {
+	position: relative;
+	text-align: right;
+	border: 2px solid black;
+	outline: 10px solid green;
+	margin: 30px;
+	width: 53%;
+	height: 63%
+}
+
+.gmap_canvas {
+	overflow: hidden;
+	max-width: none !important;
+	background: none !important;
+}
+</style>
+
+	</body>
 </html>

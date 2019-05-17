@@ -38,6 +38,7 @@ ul li a {
 }
 
 ul li ul li {
+	position: relative;
 	display: none;
 }
 
@@ -49,24 +50,8 @@ ul li:hover ul li {
 	display: block;
 }
 
-.active, ul li:hover
-{
-  background:#2bab0d;
-}
-
-
-.f-bottom {
-	background: #e45151;
-	height: 100px;
-}
-
-.footer {
-	background-color: #ffb800;
-	position: absolute;
-	height: 100px;
-	width: 100%;
-	line-height: 34px;
-	bottom: 0px;
+.active, ul li:hover {
+	background: #2bab0d;
 }
 
 .blog-bar {
@@ -84,16 +69,21 @@ ul li:hover ul li {
 	color: #fff;
 	font-weight: 600;
 }
+
+.para {
+	background-color: lightgrey;
+	font-size: 18px;
+	border: 8px solid green;
+	padding: 15px;
+	margin: 20px;
+}
 </style>
 </head>
 <body>
 	<header class="header">
-		<!-- 
-<div class="logo">
-    <a href=""></a>
-</div>
- -->
 		<div class="header-middle">
+			<img src="image/police1.jpg" align="left"
+				style="width: 10%; height: 95px;">
 			<h1 align="center">Welcome to the Just Cops</h1>
 		</div>
 
@@ -105,64 +95,58 @@ ul li:hover ul li {
 				</div>
 			</div>
 		</div>
-		
 		<div class="row" align="right">
-		
-				<button style = "height:30px; width:70px"><a href="Login.jsp">Login</a></button>
-			<button style = "height:30px; width:70px"><a href="Registration.jsp">Sign-Up</a></button>
-	
+			<button style="height: 30px; width: 70px">
+				<a href="Login.jsp">Login</a>
+			</button>
+			<button style="height: 30px; width: 70px">
+				<a href="Registration.jsp">Sign-Up</a>
+			</button>
+
 		</div>
 	</header>
-<div align="center">   
-<nav>
-       <ul>
-       <li> <a href="Home.jsp">Home</a></li>
-       <li class="active"> <a href="AboutUs.jsp">About us</a></li>  
-       <li> <a href="addComplaint.jsp">Compliant Form</a>
-             <ul>
-                <li> <a href="FIRSummary.jsp">FIR Summary</a></li>
-             </ul>
-       </li>      
-       <li> <a href="">Citizen Charter</a>
-            <ul>
-                 <li> <a href="WomenRight.jsp">Women's Right</a></li>
-                 <li> <a href="ChildRight.jsp">Children's Right</a></li>
-                 <li> <a href="CyberCrime.jsp">Cyber Crime</a></li>
-            </ul>
-        </li>    
-       <li> <a href="Emergency.jsp">Emergency</a></li>
-       <li> <a href="ContactUs.jsp">Contact us</a></li>
-       <li> <a href="Help.jsp">Help</a></li>
-       
-      </ul>
-    </nav>
-    </div>
-    <br>
-    <br>
-    <h2 align="center">--ABOUT-US--</h2>
-    <p>
-    The purpose of this website is to provide the platform to
- the citizens to voice their grievances & offer suggestions. 
-I hope that this interactive relationship between Police & Public 
-will help Thane Rural Police in preventing crime
- & winning confidence & trust of People.
-    </p>
- <!--     
-<footer class ="footer" >
-<div class="f-bottom">
-    <div class="wrapper">
-      <div class="f-align"> <span class="copyright">©2019 CSS</span>
-        <ul class="f-social">
-          <li><a href="https://twitter.com/csswinner" class="twitter" target="_blank"></a></li>
-          <li><a href="https://www.facebook.com/csswinners" class="facebook" target="_blank"></a></li>
-          <li><a href="https://www.pinterest.com/csswinner" class="pinterest" target="_blank"></a></li>
-          <li><a href="https://plus.google.com/+Csswinner" class="gplus" target="_blank"></a></li>
-          <li><a href="https://feeds.feedburner.com/csswinner" class="feed" target="_blank"></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
- </footer>  -->
+	<div align="center">
+		<nav>
+			<ul>
+				<li><a href="Home.jsp">Home</a></li>
+				<li class="active"><a href="AboutUs.jsp">About us</a></li>
+				<li><a href="FIRSummary.jsp">FIR Summary</a></li>
+				<li><a href="">Citizen Charter</a>
+					<ul>
+						<li><a href="WomenRight.jsp">Women's Right</a></li>
+						<li><a href="ChildRight.jsp">Children's Right</a></li>
+						<li><a href="CyberCrime.jsp">Cyber Crime</a></li>
+					</ul></li>
+				<li><a href="Emergency.jsp">Emergency</a></li>
+				<li><a href="ContactUs.jsp">Contact us</a></li>
+				<li><a href="Help.jsp">Help</a></li>
 
+			</ul>
+		</nav>
+	</div>
+	<br>
+	<br>
+	<h2 align="center">--ABOUT-US--</h2>
+   <p class="para">
+   <img src="image/Ritu.jpg" align="left" style="width: 10%; height: 95px;">
+   <br>
+	Indore Police has taken a major step for delivering better services
+	to the citizens by implementation of Online Police FIR project through which Police
+	will maintain all crime and criminal data in online system. Under this
+	project, Indore Police is launching a "Portal" which will
+	enable citizens to register their complaints online and seek services
+	from Police Department.
+	<br>
+	<br>
+	<br>
+      <b> Mr. Rituraj Singh</b>
+	</p>
+	<p class="para">The purpose of this website is to provide the
+		platform to the citizens to voice their grievances & offer
+		suggestions. I hope that this interactive relationship between Police
+		& Public will help Thane Rural Police in preventing crime & winning
+		confidence & trust of People.</p>
+	<img src="image/648861.jpg" align="right"
+		style="width: 100%; height: 350px;">
 </body>
 </html>

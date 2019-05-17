@@ -38,6 +38,7 @@ ul li a {
 }
 
 ul li ul li {
+     position:relative;
 	display: none;
 }
 
@@ -52,20 +53,6 @@ ul li:hover ul li {
 .active, ul li:hover
 {
   background:#2bab0d;
-}
-
-.f-bottom {
-	background: #e45151;
-	height: 100px;
-}
-
-.footer {
-	background-color: #ffb800;
-	position: absolute;
-	height: 100px;
-	width: 100%;
-	line-height: 34px;
-	bottom: 0px;
 }
 
 .blog-bar {
@@ -87,12 +74,9 @@ ul li:hover ul li {
 </head>
 <body>
 	<header class="header">
-		<!-- 
-<div class="logo">
-    <a href=""></a>
-</div>
- -->
+	
 		<div class="header-middle">
+			<img src="image/police1.jpg" align="left" style="width:10%;height:95px;">
 			<h1 align="center">Welcome to the Just Cops</h1>
 		</div>
 
@@ -117,12 +101,7 @@ ul li:hover ul li {
        <ul>
        <li> <a href="Home.jsp">Home</a></li>
        <li> <a href="AboutUs.jsp">About us</a></li>  
-       
-       <li> <a href="addComplaint.jsp">Compliant Form</a>
-             <ul>
-                <li> <a href="FIRSummary.jsp">FIR Summary</a></li>
-             </ul>
-       </li>      
+      <li><a href="FIRSummary.jsp">FIR Summary</a></li>
        <li class="active"> <a href="">Citizen Charter</a>
             <ul>
                  <li> <a href="WomenRight.jsp">Women's Right</a></li>
@@ -140,6 +119,7 @@ ul li:hover ul li {
     <br>
     <br>
     <h2 align="center">--CYBER-CRIME--</h2>
+    <img src="image/cybercrime.jpg" align="right" style="width:40%;height:250px;">
     <p style=font-size:20px;>
    1. Online gambling <br>
 There are millions of websites; all hosted on servers abroad, that offer online gambling. In fact, it is believed that many of these websites are actually fronts for money laundering. Cases of hawala transactions and money laundering over the Internet have been reported. 
@@ -161,6 +141,6 @@ This type of offence involves the theft of a computer, some part(s) of a compute
 <br>
 <br>   
 </p>
- 
+ <img src="image/cyber.png" align="right" style="width:100%;height:350px;">
 </body>
 </html>

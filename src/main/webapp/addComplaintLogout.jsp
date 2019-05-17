@@ -71,13 +71,8 @@ input {
 		style="width: 10%; height: 95px;">
 	<h1 align="center">Complaint-Form</h1>
 	<div class="row" align="right">
-		<button style="height: 30px; width: 70px">
-			<a href="Login.jsp">Login</a>
-		</button>
-		<button style="height: 30px; width: 70px">
-			<a href="Registration.jsp">Sign-Up</a>
-		</button>
-	</div>
+			<button style = "height:30px; width:70px"><a href="Logout">Logout</a></button>
+				</div>	</div>
 </header>
 <body>
 	<div align="center">
@@ -107,7 +102,8 @@ input {
 	<br>
 	<form action="SaveComplaint" method="post"
 		enctype="multipart/form-data">
-		<br> <img src="image/11.jpg" align="right"
+		<br> 
+		<img src="image/11.jpg" align="right"
 			style="width: 20%; height: 500px;">
 		<table align="center" border="">
 			<tr>
@@ -139,7 +135,7 @@ input {
 				<td><input type="text" name="Complaintype"
 					placeholder="Enter Complaint Type..."></td>
 			</tr>
-			<tr>"D:/javassi/PoliceFIR"
+			<tr>
 				<td>Date Of Incident</td>
 				<td><input type="date" name="DateOfIncident"><br></td>
 			</tr>

@@ -4,8 +4,8 @@
 <style>
 .header {
 	background-color: #44318D;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	border-bottom: 1px solid #201c29;
 	animation: none;
 }
@@ -43,20 +43,19 @@ ul li a:hover {
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	background: url(police.webp);
+	background-image: url(image/pp.jpg);
 	background-size: cover;
+	background-attachment:fixed;
 }
 
 .box {
 	position: absolute;
-	top: 50%;
+	top: 65%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 400px;
 	padding: 40px;
-	background: rgba(0, 0, 0, .8);
+	background: rgba(0, 0, 0, .9);
 	box-sizing: border-box;
 	box-shadow: 0.15px 5px rgba(0, 0, 0, .5);
 	border-radius: 10px;
@@ -84,6 +83,7 @@ body {
 	left: 0;
 	padding: 10px 0;
 	font-size: 16px;
+	font-weight:bold;
 	color: #fff;
 	pointer-event: none;
 	transition: .5s;
@@ -92,12 +92,13 @@ body {
 .box .inputbox input:focus ~label, .box .inputbox input:valid ~label {
 	top: -18px;
 	left: 0;
-	font-size: 12px;
+	font-size: 16px;
+	font-weight:bold;
 	color: #03a9f4;
 }
 
 .box .input1 label {
-	font-size: 12px;
+	font-size: 16px;
 	color: #03a9f4;
 }
 
@@ -120,10 +121,9 @@ body {
 </head>
 <body>
 	<div class="header">
+	<img src="image/police1.jpg" align="left" style="width:10%;height:100px;">
 		<div class="header-middle">
-			<marquee>
 				<h1 align="center">Welcome to the Just Cops</h1>
-			</marquee>
 		</div>
 
 		<div class="blog-bar">
@@ -143,25 +143,26 @@ body {
 			</ul>
 		</nav>
 	</div>
-
 	<div class="box">
 		<h1 align="center">Login</h1>
 		<form action="Login">
 			<div class="inputbox">
-				<input type="text" name="name" /> <label>User-Id</label>
+			<br>
+				<input type="text" name="name" placeholder="Enter Username...">
+				<label>User-Id</label>
 			</div>
 			<div class="inputbox">
-				<input type="password" name="pass" /> <label>Password</label>
+				<input type="password" name="pass" placeholder="Enter Password..."> <label>Password</label>
 			</div>
 			<div class="input1">
-				<label>User-Type </label><select name="utype">
+				<label>User-Type </label><select name="utype" style="width:60%;height:30px;">
 					<option value="" disabled selected>------------Select------------</option>
-					<option >Police</option>
+					<option>Police</option>
 					<option>User</option>
-					<option >Admin</option>
+					<option>Admin</option>
 				</select>
 			</div>
-			<br> <br> <input type="submit" value=Login>
+			<br> <br> <input type="submit" value=Login style = "height:30px; width:70px">
 
 		</form>
 	</div>

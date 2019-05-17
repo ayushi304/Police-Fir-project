@@ -1,13 +1,7 @@
-
-<%
-	String username = (String) session.getAttribute("uid");
-	if (username == null) {
-		response.sendRedirect("Home.jsp");
-	}
-%>
 <html>
 <head>
 <title>JustCops</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .header {
 	background-color: #44318D;
@@ -32,11 +26,11 @@ ul li {
 	width: 150px;
 	height: 40px;
 	background-color: black;
-	opacity: .8;
 	line-height: 40px;
 	text-algin: center;
 	font-size: 18px;
 	margin-right: 2px;
+	
 }
 
 ul li a {
@@ -57,34 +51,38 @@ ul li a:hover {
 ul li:hover ul li {
 	display: block;
 }
-.active, ul li:hover {
-	background: #2bab0d;
+
+.active, ul li:hover
+{
+  background:#2bab0d;
 }
+.para
+{
+ background-color:lightgrey;
+ font-size:18px;
+ border:10px solid green;
+ padding:15px;
+ margin:20px;
+}
+
 </style>
 </head>
-<body>
 	<header class="header">
 		<div class="header-middle">
-			<img src="image/police1.jpg" align="left"
-				style="width: 10%; height: 95px;">
+			<img src="image/police1.jpg" align="left" style="width:10%;height:95px;">
 			<h1 align="center">Welcome to the Just Cops</h1>
 		</div>
-		<h1 align="center">Police-Dashboard</h1>
 		<div class="row" align="right">
-			<button style="height: 30px; width: 70px">
-				<a href="Logout">Logout</a>
-			</button>
-		</div>
-	</header>
-
+			<button style = "height:30px; width:70px"><a href="Logout">Logout</a></button>
+				</div></header>
+<body>
 	<div align="center">
 		<nav>
 			<ul>
-				<li class="active"><a href="PoliceDASHBOARD.jsp">Home</a></li>
+				<li class="active"><a href="HomeLogout.jsp">Home</a></li>
 				<li><a href="AboutUsLogout.jsp">About us</a></li>
 				<li><a href="addComplaintLogout.jsp">Compliant Form</a>
 					<ul>
-						<li><a href="showcomplaint.jsp">Show All Cmplaint</a></li>
 						<li><a href="FIRSummaryLogout.jsp">FIR Summary</a></li>
 					</ul></li>
 				<li><a href="">Citizen Charter</a>
@@ -94,18 +92,23 @@ ul li:hover ul li {
 						<li><a href="CyberCrimeLogout.jsp">Cyber Crime</a></li>
 					</ul></li>
 				<li><a href="EmergencyLogout.jsp">Emergency</a></li>
-				<li><a href="ContactUsLogout.jsp">Feedback Service</a></li>
+				<li> <a href="ContactUsLogout.jsp">Feedback Service</a></li>
 				<li><a href="HelpLogout.jsp">Help</a></li>
-
 			</ul>
 		</nav>
 	</div>
-
-	<img src="image/185489.jpg" align="right"
-		style="width: 400px; height: 500px;">
-<br>
-<br>
-<br>
+	
+	<img src="image/185489.jpg" align="right" style="width:400px;height:550px;">
+		<br>
+		<br>
+	 <p class=para>
+	 Police Complaint Form 
+    If you have witnessed an incident that files under police attribution, 
+please use this online police FIR(Just-Cops) form to signalize it.
+ The police will review the report and take the appropriate action. 
+ <br>
+Thank you for being a responsible citizen
+	 </p>
 <!-- Map -->
 	<div class="mapouter">
 		<div class="gmap_canvas">
@@ -132,7 +135,5 @@ ul li:hover ul li {
 	background: none !important;
 }
 </style>
-
-	<br>
-</body>
+	</body>
 </html>

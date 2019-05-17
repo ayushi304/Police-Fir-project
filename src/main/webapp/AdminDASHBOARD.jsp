@@ -47,6 +47,7 @@ ul li a
 }
 ul li ul li
 {
+   position:relative;
    display:none;
 }
 
@@ -60,121 +61,103 @@ ul li:hover ul li
    display:block;
 }
 
-.f-bottom {
-    background: #e45151;
-    height: 80px;
-    }
-
-.footer
+.para
 {
-  background-color: #ffb800;
-  position:absolute;
-  height:100px; 
-  width :100%;
-  line-height: 34px;
-   bottom: 0px; 
- } 
- .blog-bar {
-    position: fixed;
-    padding: 4px 0;
-    top: 0;
-    background: #D2691E;
-    border-bottom: 1px solid #cdcdcd;
-    width: 100%;
+ background-color:lightgrey;
+ font-size:18px;
+ border:10px solid green;
+ padding:15px;
+ margin:20px;
 }
- .blog-bar .notify-text {
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
-    font-weight: 600;
-   }
+   .active, ul li:hover
+{
+  background:#2bab0d;
+}
+   
 </style>
 </head>
 <body>
 <header class="header">
-<!-- 
-<div class="logo">
-    <a href=""></a>
-</div>
- -->
+
 <div class="header-middle">
+	<img src="image/police1.jpg" align="left" style="width:10%;height:95px;">
  <h1 align="center">Welcome to the Just Cops</h1>
 </div>
 <h1 align="center">Admin-Dashboard</h1>
-<button style = "height:30px; width:70px"><a href="Logout">Logout</a></button>
+		<div class="row" align="right">
+			<button style="height: 30px; width: 70px">
+				<a href="Logout">Logout</a>
+			</button>
+		</div>
 </header> 
 <div align="center">   
 <nav>
        <ul>
-       <li> <a href="Home.jsp">Home</a></li>
-       <li> <a href="AboutUs.jsp">About us</a></li>  
-       <li> <a href="addComplaint.jsp">Compliant Form</a>
+       <li class="active"> <a href="AdminDASHBOARD.jsp">Home</a></li>
+       <li> <a href="AboutUsLogout.jsp">About us</a></li>  
+       <li> <a href="addComplaintLogout.jsp">Compliant Form</a>
              <ul>
                 <li> <a href="showcomplaint.jsp">Show All Cmplaint</a></li>
-                <li> <a href="FIRSummary.jsp">FIR Summary</a></li>
+                <li> <a href="FIRSummaryLogout.jsp">FIR Summary</a></li>
              </ul>
        </li>      
        <li> <a href="">Citizen Charter</a>
             <ul>
-                 <li> <a href="WomenRight.jsp">Women's Right</a></li>
-                 <li> <a href="ChildRight.jsp">Children's Right</a></li>
-                 <li> <a href="CyberCrime.jsp">Cyber Crime</a></li>
+                 <li> <a href="WomenRightLogout.jsp">Women's Right</a></li>
+                 <li> <a href="ChildRightLogout.jsp">Children's Right</a></li>
+                 <li> <a href="CyberCrimeLogout.jsp">Cyber Crime</a></li>
             </ul>
         </li>    
-       <li> <a href="Emergency.jsp">Emergency</a></li>
-       <li> <a href="ContactUs.jsp">Feedback Services</a>
+       <li> <a href="EmergencyLogout.jsp">Emergency</a></li>
+       <li> <a href="ContactUsLogout.jsp">Feedback Services</a>
            <ul>
                 <li> <a href="ShowAllFeedback.jsp">Show All Feedback</a></li>
              </ul>
        </li>
        <li> <a href="ShowAllPolice.jsp">Show All Police</a></li>  
        <li> <a href="ShowAllUser.jsp">Show All User</a></li>  
-       <li> <a href="Help.jsp">Help</a></li>
+       <li> <a href="HelpLogout.jsp">Help</a></li>
        
       </ul>
     </nav>
     </div>
-    
-    	
-	<img src="image/185489.jpg" align="right" style="width:400px;height:500px;">
-	
-<!-- Map -->
-	<div style="overflow: hidden; width: 700px; position: relative;">
-		<iframe width="700" height="440"
-			src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=indore+(police%20station)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
-			frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-		<div
-			style="position: absolute; width: 80%; bottom: 10px; left: 0; right: 0; margin-left: auto; margin-right: auto; color: #000; text-align: center;">
-			<small style="line-height: 1.8; font-size: 2px; background: #fff;">Powered
-				by <a href="https://embedgooglemaps.com/it/">Embedgooglemaps.com/it/</a>
-				& <a href="http://merrymobiles.co.uk/">loadonline ph</a>
-			</small>
+	<img src="image/185489.jpg" align="right" style="width:400px;height:550px;">
+		<br>
+		<br>
+	 <p class=para>
+	 Police Complaint Form 
+    If you have witnessed an incident that files under police attribution, 
+please use this online police FIR(Just-Cops) form to signalize it.
+ The police will review the report and take the appropriate action. 
+ <br>
+Thank you for being a responsible citizen
+	 </p>
+	<!-- Map -->
+	<div class="mapouter">
+		<div class="gmap_canvas">
+			<iframe width="700" height="400" id="gmap_canvas"
+				src="https://maps.google.com/maps?q=indore%20police%20station&t=&z=13&ie=UTF8&iwloc=&output=embed"
+				frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			<a href="https://www.pureblack.de"></a>
+		</div>
 		</div>
 		<style>
-#gmap_canvas img {
+.mapouter {
+	position: relative;
+	text-align: right;
+	border: 2px solid black;
+	outline: 10px solid green;
+	margin: 30px;
+	width: 53%;
+	height: 63%
+}
+
+.gmap_canvas {
+	overflow: hidden;
 	max-width: none !important;
-	background: none !important
+	background: none !important;
 }
 </style>
-	</div>
-	<br />
-    
-
-<!--  
-<footer class ="footer" >
-<div class="f-bottom">
-    <div class="wrapper">
-      <div class="f-align"> <span class="copyright">©2019 CSS</span>
-        <ul class="f-social">
-          <li><a href="https://twitter.com/csswinner" class="twitter" target="_blank"></a></li>
-          <li><a href="https://www.facebook.com/csswinners" class="facebook" target="_blank"></a></li>
-          <li><a href="https://www.pinterest.com/csswinner" class="pinterest" target="_blank"></a></li>
-          <li><a href="https://plus.google.com/+Csswinner" class="gplus" target="_blank"></a></li>
-          <li><a href="https://feeds.feedburner.com/csswinner" class="feed" target="_blank"></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
- </footer>  -->
+	
 </body>
 </html>

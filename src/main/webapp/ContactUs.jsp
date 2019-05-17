@@ -19,7 +19,11 @@ ul {
 	padding: 0px;
 	list-style: none;
 }
+input
+{
+ height:30px;
 
+}
 ul li {
 	float: left;
 	width: 150px;
@@ -38,6 +42,7 @@ ul li a {
 }
 
 ul li ul li {
+   position:relative;
 	display: none;
 }
 
@@ -54,19 +59,6 @@ ul li:hover ul li {
   background:#2bab0d;
 }
 
-.f-bottom {
-	background: #e45151;
-	height: 100px;
-}
-
-.footer {
-	background-color: #ffb800;
-	position: absolute;
-	height: 100px;
-	width: 100%;
-	line-height: 34px;
-	bottom: 0px;
-}
 
 .blog-bar {
 	position: fixed;
@@ -87,12 +79,8 @@ ul li:hover ul li {
 </head>
 <body>
 	<header class="header">
-		<!-- 
-<div class="logo">
-    <a href=""></a>
-</div>
- -->
 		<div class="header-middle">
+			<img src="image/police1.jpg" align="left" style="width:10%;height:95px;">
 			<h1 align="center">Welcome to the Just Cops</h1>
 		</div>
 
@@ -116,16 +104,7 @@ ul li:hover ul li {
 			<ul>
 				<li><a href="Home.jsp">Home</a></li>
 				<li><a href="AboutUs.jsp">About us</a></li>
-				<li><a href="">Services</a>
-					<ul>
-						<li><a href="">Feedback Services</a></li>
-						<li><a href="">Missing People</a></li>
-						<li><a href="">Most Wanted People</a></li>
-					</ul></li>
-				<li><a href="addComplaint.jsp">Compliant Form</a>
-					<ul>
-						<li><a href="FIRSummary.jsp">FIR Summary</a></li>
-					</ul></li>
+				<li><a href="FIRSummary.jsp">FIR Summary</a></li>
 				<li><a href="">Citizen Charter</a>
 					<ul>
 						<li><a href="WomenRight.jsp">Women's Right</a></li>
@@ -133,7 +112,7 @@ ul li:hover ul li {
 						<li><a href="CyberCrime.jsp">Cyber Crime</a></li>
 					</ul></li>
 				<li><a href="Emergency.jsp">Emergency</a></li>
-				<li class="active"> <a href="ContactUs.jsp">Contact us</a></li> 
+				<li class="active"> <a href="ContactUs.jsp">Feedback Service</a></li> 
 			    <li><a href="Help.jsp">Help</a></li>
 			</ul>
 		</nav>
@@ -141,34 +120,17 @@ ul li:hover ul li {
 <br>
 <br>
 	
-<h2 align="center">CONTACT US</h2>
+<h2 align="center">--FEEDBACK-FORM--</h2>
+<br>
 	<form action="SaveContact">
-		<label>Email</label> <input type="email" name="email"> <label>Name</label>
-		<input type="text" name="name"> <label>Message</label> <input
-			type="text" name="message"> <input type="submit"
-			name="Submit">
+		<label>Email</label> <input type="email" name="email" placeholder="Enter Email..."> <label>Name</label>
+		<input type="text" name="name" placeholder="Enter Name...">
+		<label>Message</label> 
+		<textarea row="5" cols="40" name="message" > </textarea>
+ <input type="submit" name="Submit">
 	</form>
-	<footer class="footer">
-		<div class="f-bottom">
-			<div class="wrapper">
-				<div class="f-align">
-					<span class="copyright">©2019 CSS</span>
-					<ul class="f-social">
-						<li><a href="https://twitter.com/csswinner" class="twitter"
-							target="_blank"></a></li>
-						<li><a href="https://www.facebook.com/csswinners"
-							class="facebook" target="_blank"></a></li>
-						<li><a href="https://www.pinterest.com/csswinner"
-							class="pinterest" target="_blank"></a></li>
-						<li><a href="https://plus.google.com/+Csswinner"
-							class="gplus" target="_blank"></a></li>
-						<li><a href="https://feeds.feedburner.com/csswinner"
-							class="feed" target="_blank"></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
-
+	<br>
+	<img src="image/feedback.jpg" align="right" style="width:40%;height:250px;">
+	
 </body>
 </html>
